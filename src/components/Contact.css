@@ -1,0 +1,144 @@
+.contact{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  flex-direction: column;
+}
+.contact h1{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact_detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 15rem;
+  margin-bottom: 7rem;
+}
+.contact_detail .cimage{
+  width: 55rem;
+  height: 310px;
+}
+.contact_detail .cimage img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 7rem;
+}
+
+.form_control{
+  margin-bottom: 5rem;
+}
+
+.form_control form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.form_control input {
+  height: 4rem;
+  width: 50rem;  
+}
+.form_control textarea,input{
+  background: white;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  outline: none;
+  padding: 1rem 1rem;
+  color: var(--black);
+}
+
+.form_control form {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  flex-direction: column;
+}
+.form_control label {
+  font-size: 1.6rem;
+  width: fit-content;
+  color: var(--white);
+}
+
+.form_control button{
+  height: 4rem;
+  background: var(--saffron);
+  border:none;
+  color: var(--white);
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  transition: .3s;
+}
+.form_control button:hover{
+  color: var(--saffron);
+  background: var(--black);
+  border: 1px solid var(--saffron);
+}
+
+@media(max-width:1200px){
+  .form_control input{
+    width: 30rem;
+  }
+  .contact_detail .cimage{
+    width: 40rem;
+  }
+}
+
+@media(max-width:900px){
+  .form_control input{
+    width: 40rem;
+  }
+  .contact_detail .cimage img{
+    width: 40rem;
+  }
+}
+@media(min-width:501px) and (max-width:800px){
+  .contact_detail{
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_detail  .form_control{
+    margin-left: 0;
+  }
+  .contact_detail .cimage img{
+    width: 35rem;
+  }
+  .contact h1{
+    font-size: 3rem;
+  }
+}
+
+@media(max-width:500px){
+  .contact_detail{
+    padding: 0 1rem;
+  }
+  .contact_detail{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form_control input{
+    width: 38rem;
+  }
+}
+@media(max-width:400px){
+  .form_control input{
+    width: 100%;
+  }
+  .contact_detail .cimage img{
+    width: 33rem;
+  }
+  .form_control input{
+    width: 33rem;
+  }
+}
